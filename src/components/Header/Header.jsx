@@ -31,12 +31,12 @@ const nav__links = [
 
 
 const Header = () => {
-  // const menuRef = useRef(null);
+  const menuRef = useRef(null);
   // const headerRef = useRef(null);
   // const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   // const dispatch = useDispatch();
 
-  // const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+  const toggleMenu = () => menuRef.current.classList.toggle("show_menu");
   // let navigate = useNavigate();
 
   // const toggleCart = () => {
@@ -69,11 +69,11 @@ const Header = () => {
             <h5>Food Restuarant</h5>
           </div>
           {/*/////////////////      menu      //////////////////////// */}
-          <div className="navigation">
+          <div className="navigation" ref={menuRef}>
             <div className="menu d-flex align-items-center gap-5">
               {
                 nav__links.map((item, index) => (
-                  <NavLink to={item.path} key={index}>{item.display}</NavLink>
+                  <NavLink onClick={toggleMenu} to={item.path} key={index} className={navClass => navClass.isActive ? 'active_menu' : ''}>{item.display} </NavLink>
                 ))
               }
             </div>
@@ -90,7 +90,7 @@ const Header = () => {
             <span className="user">
               <Link to='/login'> <i className="ri-user-line"></i> </Link>
             </span>
-            <span className="mobile_menu">
+            <span className="mobile_menu" onClick={toggleMenu}>
               <i className="ri-menu-line"></i>
             </span>
           </div>

@@ -1,51 +1,97 @@
 .footer {
-  padding: 50px 0px;
+
+  padding-top: 50px;
+  padding-bottom: 30px;
   background: #fde4e4;
-  display: flex;
-  text-align: start;
-  justify-content: center;
-  gap: 8rem;
-  align-items: center;
 }
 
-.footer__logo img {
-  width: calc(100% - 70%);
-  margin-bottom: 1.5rem;
+.footer_logo img {
+  width: calc(100% - 80%);
+  margin-bottom: 5px;
 }
 
-.footer__logo h5 {
+.footer_logo h5 {
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 15px;
 }
 
-.footer__logo p {
-  font-size: 0.9rem;
+.footer_logo p {
+  font-size: .9rem;
   color: #333;
-  line-height: 29px;
+  line-height: 28px;
 }
 
-.delivery__time-item {
-  display: flex;
-  margin: 0;
-  gap: 0.7rem;
+
+.delivery_time-item {
   background: transparent !important;
+  /* background-color: #fde4e4 !important; */
 }
 
-.delivery__time-item span {
+.delivery_time-item span {
   font-weight: 600;
   color: #212245;
-  margin: 0;
+  font-size: 1rem;
+  background: transparent;
+
 }
 
-.delivery__time-item p {
+.delivery_time-item p {
   color: #212245;
 }
 
-.footer__title {
+
+
+.footer_title {
   font-size: 1.1rem;
   color: #212245;
   font-weight: 600;
+}
+
+.newsletter {
+  padding: 5px;
+  border: 1px solid #212245;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.newsletter input:focus {
+  outline: none;
+}
+
+.newsletter input::placeholder {
+  color: #212245
+}
+
+.newsletter span {
+  background: #df2020;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.newsletter span i {
+  color: #fff;
+}
+
+.newsletter input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.social_links span i {
+  padding: 5px;
+  background: #df2020;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.copyright_text {
+  font-size: 0.8rem;
+  color: #df2020
 }
 
 @media only screen and (max-width: 768px) {
@@ -55,19 +101,19 @@
     gap: 1rem;
   }
 
-  .footer__logo img {
+  .footer_logo img {
     width: calc(100% - 85%);
   }
 
-  .footer__title {
+  .footer_title {
     font-size: 0.9rem;
   }
 
-  .delivery__time-item span {
+  .delivery_time-item span {
     font-size: 0.8rem;
   }
 
-  .delivery__time-item p {
+  .delivery_time-item p {
     font-size: 0.7rem;
     margin-bottom: 0;
   }

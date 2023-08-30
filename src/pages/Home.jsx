@@ -8,6 +8,7 @@ import guyImg from "../assets/images/delivery-guy.png";
 import "../styles/hero-section.css";
 
 const Home = () => {
+
   return (
     <Helmet title="Home">
       <section>
