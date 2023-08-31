@@ -1,68 +1,97 @@
-.hero__content {
+.hero_content {
   padding-top: 70px;
 }
 
-.hero__title {
+.hero_title {
   font-size: 2.5rem;
   line-height: 55px;
 }
 
-.hero__title span {
+.hero_title span {
   color: #df2020;
 }
 
-.hero__content p {
+.hero_content p {
   font-size: 1rem;
   line-height: 30px;
   color: #777;
 }
 
-.order__btn {
+.hero_btn button {
   border: none;
   outline: none;
   padding: 7px 20px;
   border-radius: 5px;
   cursor: pointer;
-  background: #df2020;
-  color: #fff;
   font-weight: 600;
+
 }
 
-.order__btn:hover {
+.order_btn {
+  background: #df2020;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.order_btn:hover {
   background: #212245;
 }
 
-.order__btn:hover a {
+.order_btn:hover a {
   color: inherit;
   text-decoration: none;
 }
 
-.hero__img {
+.all_foods-btn {
+  background: transparent;
+  border: 1px solid #df2020 !important;
+}
+
+.all_foods-btn a {
+  text-decoration: none;
+  color: #df2020;
+}
+
+.hero_img {
   margin: 40px;
 }
 
+.hero_service p{
+
+  color: #212245;
+  font-weight: 600;
+  font-size: 0.9rem;
+} 
+
+.shipping_icon i{
+  padding: 5px;
+  background: #df2020;
+  color: #fff;
+  border-radius : 50%;
+  font-weight: 500 !important;
+}
 @media only screen and (max-width: 768px) {
-  .hero__content h5 {
+  .hero_content h5 {
     font-size: 1rem;
   }
 
-  .hero__content p {
+  .hero_content p {
     font-size: 0.8rem;
     line-height: 25px;
   }
 
-  .hero__title {
+  .hero_title {
     font-size: 1.5rem;
     line-height: 40px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .hero__content {
+  .hero_content {
     text-align: center;
   }
 
-  .order__btn {
+  .order_btn {
     display: block;
     margin: 0 auto;
   }

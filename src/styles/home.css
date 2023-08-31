@@ -1,0 +1,45 @@
+.feature_subtitle {
+    color: #df2020;
+
+}
+
+.feature_title span{
+    color: #df2020
+}
+
+.feature_text{
+    color: #777
+}
+
+.feature_item p {
+    color: #777
+}
+
+.food_category{
+    background: #df2020;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0px;
+    border-radius: 8px;
+}
+
+.food_category button {
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    background: transparent;
+    color: #fff
+}
+
+.food_category button img {
+    width: 20px;
+    height: 20px;
+
+}
+
+
+.foodBtnActive {
+    background: #fff !important;
+    border-radius: 5px;
+    color: #df2020 !important
+}

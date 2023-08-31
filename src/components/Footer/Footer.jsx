@@ -124,7 +124,7 @@ const Footer = () => {
               <p className="copyright_text">Copyright - 2023, Website made by Noman Nasir. All rights reserved</p>
             </Col>
             <Col lg='6' md='6'>
-              <div className="social_links d-flex align-items-center gap-4 text-decoration-none justify-content-end">
+              <div className="social_links d-flex align-items-center gap-4 justify-content-end">
                 <p className="m-0">Folow:</p>
                 <span><Link to='https://www.facebook.com/' target="_blank"><i class="ri-facebook-fill"></i></Link></span>
                 <span><Link to='https://github.com/' target="_blank"><i class="ri-github-fill"></i></Link></span>
