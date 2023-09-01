@@ -7,7 +7,7 @@ import '../../styles/product-card.css'
 
 const ProductCard = (props) => {
 
-    const { id, title , image01, price} = props.item;
+    const { id, title, image01, price } = props.item;
 
     return (
         <div className="product_item">
@@ -17,12 +17,14 @@ const ProductCard = (props) => {
 
             <div className="product_content">
                 <h5><Link to={`/foods/${id}`}>{title}</Link></h5>
-                <span className="product_price">
-                    ${price}
-                </span>
-                <button className="addTOcart">
-                    Add to cart
-                </button>
+                <div className="d-flex align-items-center justify-content-between">
+                    <span className="product_price">
+                        ${price}
+                    </span>
+                    <button className="addTOCART_btn">
+                        Add to cart
+                    </button>
+                </div>
             </div>
         </div>
     )

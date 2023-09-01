@@ -19,10 +19,12 @@
 .product_content h5 a {
   color: #212245;
   font-style: 1rem;
+  text-decoration: none;
 }
 
 .product_content h5 {
   margin-bottom: 30px;
+  font-size: 1rem;
 }
 
 .product_price {
