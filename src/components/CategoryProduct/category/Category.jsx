@@ -30,25 +30,24 @@ const categoryData = [
 ]
 const Category = () => {
     return (
-    
-            <Container>
-                <Row>
-                    {
-                        categoryData.map((item, index) => (
 
-                            <Col lg="3" md="4">
-                                <div className="category_item d-flex align-items-center gap-3">
-                                    <div className="category_img">
-                                        <img src={item.imgUrl} alt="category_item" />
-                                    </div>
-                                    <h6>{item.display}</h6>
+        <Container>
+            <Row>
+                {
+                    categoryData.map((item, index) => (
+                        <Col lg="3" md="4" sm='6' xs='6' className='mb-3'>
+                            <div className="category_item d-flex align-items-center gap-3">
+                                <div className="category_img">
+                                    <img src={item.imgUrl} alt="category_item" />
                                 </div>
-                            </Col>
-                        ))
+                                <h6>{item.display}</h6>
+                            </div>
+                        </Col>
+                    ))
 
-                    }
-                </Row>
-            </Container>
+                }
+            </Row>
+        </Container>
     )
 }
 

@@ -1,5 +1,4 @@
 .footer {
-
   padding-top: 50px;
   padding-bottom: 30px;
   background: #fde4e4;
@@ -95,15 +94,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .footer_logo img {
-    width: calc(100% - 85%);
-  }
 
   .footer_title {
     font-size: 0.9rem;
@@ -117,4 +107,52 @@
     font-size: 0.7rem;
     margin-bottom: 0;
   }
+
+  .newsletter input {
+    padding: 7px;
+    font-size: 0.7rem;
+  }
+
+  .newsletter span {
+    padding: 4px 20px;
+    font-size: 0.7rem;
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+  .copyright_text {
+    text-align: center;
+  }
+
+
+  .social_links {
+    justify-content: center;
+  }
+
+  .social_links p {
+    font-size: 0.9rem;
+  }
+
+  .social_links span {
+    padding: 4px;
+  }
+
+  .social_links span a {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media only screen and (max-width: 992px){
+  .newsletter input {
+    padding: 7px;
+    font-size: 0.7rem;
+  }
+
+  .newsletter span {
+    padding: 4px 20px;
+    font-size: 0.7rem;
+  } 
 }

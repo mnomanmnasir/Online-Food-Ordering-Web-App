@@ -1,35 +1,35 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const items =
-  localStorage.getItem("cartItems") !== null
-    ? JSON.parse(localStorage.getItem("cartItems"))
-    : [];
+// const items =
+//   localStorage.getItem("cartItems") !== null
+//     ? JSON.parse(localStorage.getItem("cartItems"))
+//     : [];
 
-const totalAmount =
-  localStorage.getItem("totalAmount") !== null
-    ? JSON.parse(localStorage.getItem("totalAmount"))
-    : 0;
+// const totalAmount =
+//   localStorage.getItem("totalAmount") !== null
+//     ? JSON.parse(localStorage.getItem("totalAmount"))
+//     : 0;
 
-const totalQuantity =
-  localStorage.getItem("totalQuantity") !== null
-    ? JSON.parse(localStorage.getItem("totalQuantity"))
-    : 0;
+// const totalQuantity =
+//   localStorage.getItem("totalQuantity") !== null
+//     ? JSON.parse(localStorage.getItem("totalQuantity"))
+//     : 0;
 
-const setItemFunc = (item, totalAmount, totalQuantity) => {
-  localStorage.setItem("cartItems", JSON.stringify(item));
-  localStorage.setItem("totalAmount", JSON.stringify(totalAmount));
-  localStorage.setItem("totalQuantity", JSON.stringify(totalQuantity));
-};
+// const setItemFunc = (item, totalAmount, totalQuantity) => {
+//   localStorage.setItem("cartItems", JSON.stringify(item));
+//   localStorage.setItem("totalAmount", JSON.stringify(totalAmount));
+//   localStorage.setItem("totalQuantity", JSON.stringify(totalQuantity));
+// };
 
 const initialState = {
-  cartItems: items,
-  totalQuantity: totalQuantity,
-  totalAmount: totalAmount,
+  cartItems: [],
+  totalQuantity: 0,
+  totalAmount: 0,
 };
 
 const cartSlice = createSlice({
   name: "cart",
-  initialState,
+  initialState : initialState,
 
   
   reducers: {
@@ -38,7 +38,7 @@ const cartSlice = createSlice({
       const newItem = action.payload;
       const id = action.payload.id;
       const extraIngredients = action.payload.extraIngredients;
-      const existingItem = state.cartItems.find((item) => item.id === id);
+      const existingItem = state.cartItems.find((item) => item.id === newItem.id);
 
       
       if (!existingItem) {

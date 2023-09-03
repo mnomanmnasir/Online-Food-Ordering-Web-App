@@ -86,7 +86,7 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero_content">
-                <h5 className="mb-3">Easy order & fast delivery</h5>
+                <h5 className="mb-0">Easy order & fast delivery</h5>
                 <h1 className="mb-4 hero_title">
                   <span>HUNGRY?</span> Just wait <br /> food at<span> your door</span>
                 </h1>
@@ -121,7 +121,7 @@ const Home = () => {
         <Category />
       </section>
 
-      <section className="m-5">
+      <section>
         <Container>
           <Row>
             <Col lg="12" className="text-center">
@@ -137,7 +137,7 @@ const Home = () => {
 
             {
               featureData.map((item, index) => (
-                <Col lg='4' md='4' key={index} className="mt-5">
+                <Col lg='4' md='6' sm='6' xs='6' key={index} className="mt-5">
                   <div className="feature_item text-center px-5 py-4">
                     <img src={item.imgUrl} alt="feature-img" className="w-25 mb-3" />
 
@@ -172,7 +172,7 @@ const Home = () => {
             </Col>
             {
               allProducts.map((item, index) => (
-                <Col lg='3' md='4' key={item.id} className="mt-5">
+                <Col lg='3' md='4' sm='6' xs='6' key={item.id} className="mt-5">
                   <ProductCard item={item} />
                 </Col>
 
@@ -183,7 +183,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section>
+      <section className="mobile_area">
         <Container>
           <Row>
             <Col lg='6' md='6'>
@@ -196,7 +196,7 @@ const Home = () => {
                   Why <span> Tasty Treat? </span>
                 </h2>
                 <p className="tasty_treat-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis labore perferendis tempore corporis quae quo, molestias vitae eveniet, odio, amet fugit. Dolorem possimus obcaecati ex ea, cumque exercitationem vitae laboriosam!</p>
-                <ListGroup className="mt-5">
+                <ListGroup className="mt-4">
                   <ListGroupItem className="border-0 ps-0">
                     <p className="choose_us-title d-flex align-items-center gap-2">
                       <i className="ri-checkbox-circle-line">
@@ -250,7 +250,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="mt-5">
+      <section>
         <Container>
           <Row>
             <Col lg='6' md='6'>
@@ -260,7 +260,7 @@ const Home = () => {
                 </h5>
                 <h2 className="testimonial_title mb-4">What <span>our Customer</span> are saying</h2>
                 <p className="testimoninal_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus harum vero esse laboriosam ab modi alias commodi repudiandae dignissimos tenetur.</p>
-              <TestimonialSlider />
+                <TestimonialSlider />
               </div>
             </Col>
             <Col lg='6' md='6'>
