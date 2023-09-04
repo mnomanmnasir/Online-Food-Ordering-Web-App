@@ -8,7 +8,6 @@ import homeImg from "../assets/images/hero.png";
 import "../styles/hero-section.css";
 import Category from "../components/CategoryProduct/category/Category.jsx";
 import '../styles/home.css'
-
 import featureImg1 from '../assets/images/service-01.png'
 import featureImg2 from '../assets/images/service-02.png'
 import featureImg3 from '../assets/images/service-03.png'
@@ -16,10 +15,10 @@ import products from '../assets/fake-data/products.js'
 import foodCategoryImg1 from '../assets/images/hamburger.png'
 import foodCategoryImg2 from '../assets/images/pizza.png'
 import foodCategoryImg3 from '../assets/images/bread.png'
-import ProductCard from "../components/product-card/ProductCard.jsx";
+import ProductCard from "../components/ProductCardMaterial/product-card/ProductCard.jsx";
 import mobileImg from '../assets/images/location.png'
 import networkingImg from '../assets/images/network.png'
-import TestimonialSlider from "../components/product-card/slider/TestimonialSlider.jsx";
+import TestimonialSlider from "../components/ProductCardMaterial/slider/TestimonialSlider.jsx";
 
 
 const featureData = [

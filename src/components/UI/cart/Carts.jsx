@@ -17,15 +17,15 @@ const Carts = () => {
     dispatch(cartUiActions.toggle());
   };
   return (
-    <div className="cart__container" onClick={toggleCart}>
+    <div className="cart_container" onClick={toggleCart}>
       <ListGroup onClick={(event) => event.stopPropagation()} className="cart">
-        <div className="cart__closeButton">
+        <div className="cart_closeButton">
           <span onClick={toggleCart}>
             <i className="ri-close-fill"></i>
           </span>
         </div>
 
-        <div className="cart__item-list">
+        <div className="cart_item-list">
           {cartProducts.length === 0 ? (
             <h6 className="text-center">No item added to the cart</h6>
           ) : (
@@ -35,7 +35,7 @@ const Carts = () => {
           )}
         </div>
 
-        <div className="cart__bottom d-flex align-items-center justify-content-between">
+        <div className="cart_bottom d-flex align-items-center justify-content-between">
           <h6>
             Subtotal : <span>${totalAmount}</span>
           </h6>

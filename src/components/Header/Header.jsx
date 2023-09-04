@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { Container } from "reactstrap";
 import logo from "../../assets/images/res-logo.png";
 import { NavLink, Link } from "react-router-dom";
-// import { useSelector, useDispatch } from "react-redux";
+import { useSelector , useDispatch} from "react-redux";
 // import '../../styles/header.css'
-// import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
+import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
 
 import "../../styles/header.css";
 
@@ -33,15 +33,15 @@ const nav__links = [
 const Header = () => {
   const menuRef = useRef(null);
   // const headerRef = useRef(null);
-  // const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-  // const dispatch = useDispatch();
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+  const dispatch = useDispatch();
 
   const toggleMenu = () => menuRef.current.classList.toggle("show_menu");
   // let navigate = useNavigate();
 
-  // const toggleCart = () => {
-  //   dispatch(cartUiActions.toggle());
-  // };
+  const toggleCart = () => {
+    dispatch(cartUiActions.toggle());
+  };
 
   // console.log(menuRef?.current?.classList.value);
 
@@ -83,9 +83,9 @@ const Header = () => {
           {/*/////////////////      nav right icon      //////////////////////// */}
 
           <div className="nav_right d-flex align-items-center gap-4">
-            <span className="cart_icon">
+            <span className="cart_icon" onClick={toggleCart}>
               <i className="ri-shopping-basket-line"></i>
-              <span><i className="cart_badge">2</i></span>
+              <span><i className="cart_badge">{totalQuantity}</i></span>
             </span>
             <span className="user">
               <Link to='/login'> <i className="ri-user-line"></i> </Link>

@@ -42,17 +42,17 @@ const CartItem = ({ item, onClose }) => {
   }
 
   return (
-    <ListGroupItem className="border-0 cart__item" onClick={handlePizzaSelection}>
-      <div className="cart__item-info d-flex gap-4">
+    <ListGroupItem className="border-0 cart_item" onClick={handlePizzaSelection}>
+      <div className="cart_item-info d-flex gap-4">
         <img src={image01} alt="product-img" />
 
-        <div className="cart__product-info w-100 d-flex align-items-center gap-4 justify-content-between">
+        <div className="cart_product-info w-100 d-flex align-items-center gap-4 justify-content-between">
           <div>
-            <h6 className="cart__product-title">{title}</h6>
-            <p className=" d-flex align-items-center gap-5 cart__product-price">
+            <h6 className="cart_product-title">{title}</h6>
+            <p className=" d-flex align-items-center gap-5 cart_product-price">
               {quantity}x <span>${price}</span>
             </p>
-            <div className="d-flex flex-column">
+            {/* <div className="d-flex flex-column">
             {
               extraIngredients !== undefined && (
                 Array.from(extraIngredients).map(value => {
@@ -64,19 +64,19 @@ const CartItem = ({ item, onClose }) => {
                 })
                 )
               }
-              </div>
-            <div className=" d-flex align-items-center justify-content-between increase__decrease-btn">
-              <span className="increase__btn" onClick={event => incrementItem(event)}>
+              </div> */}
+            <div className=" d-flex align-items-center justify-content-between increase_decrease-btn">
+              <span className="increase_btn" onClick={event => incrementItem(event)}>
                 <i className="ri-add-line"></i>
               </span>
               <span className="quantity">{quantity}</span>
-              <span className="decrease__btn" onClick={event => decreaseItem(event)}>
+              <span className="decrease_btn" onClick={event => decreaseItem(event)}>
                 <i className="ri-subtract-line"></i>
               </span>
             </div>
           </div>
 
-          <span className="delete__btn" onClick={event => deleteItem(event)}>
+          <span className="delete_btn" onClick={event => deleteItem(event)}>
             <i className="ri-close-line"></i>
           </span>
         </div>
