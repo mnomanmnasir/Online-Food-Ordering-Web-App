@@ -99,6 +99,10 @@
 .feedback_text {
   color: #212245b6  
 }
+
+.img_item{
+  cursor: pointer;
+}
 .description_content {
   padding: 30px 0px;
 }
@@ -120,6 +124,40 @@
   font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 768px){
+  .product_title{
+    font-size: 1.2rem !important;
+  }
+  .product_price, .product_price span{
+    font-size: 1.1rem !important;
+  }
+  .category, .category span{
+    font-size: 2rem !important;
+  }
+  .tabs{
+    margin-top: 30px;
+  }
+  .tabs h6{
+    font-size: 0.9rem;
+  }
+  .tab_content p, .user_name, .user_email {
+    font-size: 0.9rem;
+  }
+  .user_email{
+    font-size: 0.7rem;
+  }
+  .form{
+    width: 100% !important;
+    margin-top: 50px; 
+  }
+  .form_group input::placeholder, .form_group textare::placeholder{
+    font-size: 0.8rem;
+  }
+  .related_Product-title{
+    font-size: 1.2rem !important;
+  }
+}
+
 @media only screen and (max-width: 830px) {
   .product_title {
     font-size: 1.2rem;
@@ -135,6 +173,7 @@
     font-size: 0.8rem !important;
   }
 
+ 
   .description_content p {
     font-size: 0.8rem;
   }

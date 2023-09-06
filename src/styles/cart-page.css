@@ -1,35 +1,35 @@
 th {
-  text-align: center;
+  text-align: center !important; 
 }
 
-.cart__img-box {
+.cart_img-box {
   width: 80px;
 }
 
-.cart__img-box img {
+.cart_img-box img {
   width: 100%;
 }
 
-.cart__item-del i {
+.cart_item-del i {
   cursor: pointer;
 }
 
-.cart__page-btn {
+.cart_page-btn {
   display: flex;
   flex-wrap: nowrap;
   margin: 2rem 0;
 }
 
-.cart__page-btn button a:hover {
+.cart_page-btn button a:hover {
   color: #fff;
 }
 
-.cart__subtotal {
+.cart_subtotal {
   color: #df2020;
   font-size: 1.5rem;
 }
 
-.addTOCart__btn {
+.addTOCart_btn {
   border: none;
   padding: 7px 25px;
   background: #df2020;
