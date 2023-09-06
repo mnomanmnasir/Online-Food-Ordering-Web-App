@@ -67,6 +67,7 @@
 
 .cart_icon {
   position: relative;
+  cursor: pointer;
 }
 
 .cart_badge {
